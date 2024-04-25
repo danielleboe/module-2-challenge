@@ -16,12 +16,9 @@ html {
   display: inline-block;
   text-decoration:none;
   background-color:#33373f;
+  margin:0;
 /*  align-items: center;
   text-align: center; */
-}
-
-header{
-  margin:0;
 }
 
 .pagename{
@@ -36,18 +33,11 @@ align-content:center;
 text-decoration:none;  
 }
 
-
 h1 {
     margin: 0;
     font-size: 3em;
     text-align: center;
     display:inline-block;
-    text-decoration: none;
-}
-
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
     text-decoration: none;
     padding: 4px  15px  4px 0;
 }
@@ -69,25 +59,14 @@ nav{
     align-content:bottom;
     flex-direction: row-reverse;
    
-
-    /*
-    margin: 10px;
-    align-content: center;
-    padding-top: 10px;
-    margin-right:10px;
-   
-    */
 }
 
-header li {
+.header li {
     color:#8fc5c7;
     text-decoration: none!important;
     display: block;
     float: left;
     list-style-type: none;
-    /*
-     flex-wrap: wrap;
-    display: block; */
     margin: 10px;
     paddinG: 10px;
     scroll-padding-bottom: 10px;
@@ -97,8 +76,7 @@ header li {
     
   }
   
-
-header ul{
+.header ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -109,32 +87,18 @@ header ul{
 
 a { 
   text-decoration: none; 
-  color: inherit; /* This ensures that the color of the anchor inherits from its parent */
+  color: inherit;
 } 
-
-/*
-.name{
-    color:white;
-    float:left;
-    padding: 10px;
-}
-*/
 
 .hero {
   display:block;
   background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
-  background-image: url("https://i0.wp.com/www.gsma.com/publicpolicy/wp-content/uploads/2016/12/hero-placeholder.gif");
+  background-image: url("https://media.istockphoto.com/id/1359861587/vector/blue-modern-abstract-wide-banner-with-geometric-shapes-dark-blue-abstract-background.jpg?s=612x612&w=0&k=20&c=xDMI5_-xyh_IHm2ca07x5xFTR7kRoFZJhxrq10FQra0=");
   height: 70vh;
   position:relative;
   margin-top:0;
-  
-  /*
-    align-self: center;
-    flex-direction: column;
-    background-attachment: fixed;
-  */
   align-items: center;
   justify-content: center;
   align-content:center;
@@ -162,10 +126,6 @@ a {
   font-size: 35px;
   color:#33373f;
 }
-
-.image-container {
-    padding:3px;
-  }
 
   .details {
     display: grid; 
@@ -237,11 +197,24 @@ a {
   
 }
 
+@media screen and (max-width: 768px) {
+  .details {
+    display: block; /* Change from grid to block layout */
+  }
+  
+  .item1, .item2, .item3, .item4, .item5, .item6 {
+    width: 100%; /* Make each item full width */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+  }
+}
+
 .image-container{
   padding: 5px;
-   background-color:#8fc5c7;
-   position: relative;
-   display:inline-block;
+  background-color:#8fc5c7;
+  position: relative;
+  display:inline-block;
   }
 
   a:hover img {
@@ -301,9 +274,6 @@ a {
   color:#455878;
   text-decoration: none;
 }
-
-
-
 
 footer{
     font-size: smaller;
