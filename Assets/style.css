@@ -1,0 +1,311 @@
+html {
+    -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #e4e5ee;
+    font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    margin:0%;
+  }  
+
+.header{
+  width: 100%;
+  color:#8fc5c7;
+  font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif;
+  display: inline-block;
+  text-decoration:none;
+  background-color:#33373f;
+/*  align-items: center;
+  text-align: center; */
+}
+
+header{
+  margin:0;
+}
+
+.pagename{
+align-content:center;
+color:#33373f;
+float:left;
+background-color:#8fc5c7;
+align-items: center;
+text-align: center;
+padding-left:40px;
+align-content:center;
+text-decoration:none;  
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    text-decoration: none;
+    padding: 4px  15px  4px 0;
+}
+
+h2{
+  font-weight: 50px;
+}
+
+nav{
+    padding-top: 15px;
+    /* margin-right: 20px; */
+    display:block;
+    color:#8fc5c7; 
+    text-align:right;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    align-items: right;
+    align-content:bottom;
+    flex-direction: row-reverse;
+   
+
+    /*
+    margin: 10px;
+    align-content: center;
+    padding-top: 10px;
+    margin-right:10px;
+   
+    */
+}
+
+header li {
+    color:#8fc5c7;
+    text-decoration: none!important;
+    display: block;
+    float: left;
+    list-style-type: none;
+    /*
+     flex-wrap: wrap;
+    display: block; */
+    margin: 10px;
+    paddinG: 10px;
+    scroll-padding-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    border-bottom:3px solid #8fc5c7;
+    
+  }
+  
+
+header ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float:right;
+  text-decoration: none;
+  color:#8fc5c7;
+}
+
+a { 
+  text-decoration: none; 
+  color: inherit; /* This ensures that the color of the anchor inherits from its parent */
+} 
+
+/*
+.name{
+    color:white;
+    float:left;
+    padding: 10px;
+}
+*/
+
+.hero {
+  display:block;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-image: url("https://i0.wp.com/www.gsma.com/publicpolicy/wp-content/uploads/2016/12/hero-placeholder.gif");
+  height: 70vh;
+  position:relative;
+  margin-top:0;
+  
+  /*
+    align-self: center;
+    flex-direction: column;
+    background-attachment: fixed;
+  */
+  align-items: center;
+  justify-content: center;
+  align-content:center;
+  text-decoration: none;
+}
+
+.user-image{
+  display:block;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-subtitle {
+  position: relative;
+  text-align: center;
+}
+
+.bottom-right  {  
+  position: absolute;
+  bottom: 4%;
+  right: 0;
+  background-color: #8fc5c7;
+  padding: 1.5% 4%;
+  font-size: 35px;
+  color:#33373f;
+}
+
+.image-container {
+    padding:3px;
+  }
+
+  .details {
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-template-columns: 30% 60%; 
+    grid-template-rows: auto auto auto; 
+    gap: 10px 10px; 
+    justify-content: center; 
+    align-content: center; 
+    align-items: center; 
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f";
+      color: #455878;
+      margin: 30px 30px 30px 0;
+  }
+  
+  .item1 {
+    grid-area: a;
+  }
+
+  .item2 {
+    grid-area: b;
+  }
+
+  .item3 {
+    grid-area: c;
+  }
+
+  .item4 {
+    grid-area: d;
+  }
+
+  .item5 {
+    grid-area: e;
+  }
+
+  .item6 {
+    grid-area: f;
+  }
+
+  .item1, .item3, .item5 {
+    justify-items: center; 
+    justify-content: right;
+    padding-right: 10px; /* Adjust this value as needed */
+    border-right: 4px solid #455878;
+    text-align: right;
+    margin: 10%;
+    height: 100%;
+    font-size: 1em;
+    overflow: hidden; /* Add this line */
+  }
+
+  .row{
+    content: "";
+     clear: both; 
+     display: table;
+     width: 100%;
+   }  
+ 
+.column1 {
+  float: left;
+  width: 100%;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  position: relative;
+  text-align: center;
+  
+}
+
+.image-container{
+  padding: 5px;
+   background-color:#8fc5c7;
+   position: relative;
+   display:inline-block;
+  }
+
+  a:hover img {
+    filter: brightness(110%);
+  }
+
+.column {
+  float: left;
+  width: 48%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  position: relative;
+  text-align: center;
+  }  
+  
+  .application {
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+    background-color:#8fc5c7;
+    padding:10px;
+    color:#455878;
+    line-height: 0.5%;
+}  
+
+#app2, #app4 {
+  margin: 2% 2% 2% 0;
+}
+
+#app3, #app5 {
+  margin: 2% 0 2% 2%;
+}
+
+.item6 li{
+
+    color:#33373f;
+    display: block;
+    float: left;
+    list-style-type: none;
+    margin: 30px; 
+    padding: 10px;
+    scroll-padding-bottom: 10px;
+    text-decoration: none!important;
+    overflow: hidden;
+    position: relative;
+    border-bottom:4px solid #455878;
+    font-size: 20px;
+    
+  }
+  
+.item6 ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  float:center;
+  color:#455878;
+  text-decoration: none;
+}
+
+
+
+
+footer{
+    font-size: smaller;
+    text-align: center; 
+      }
